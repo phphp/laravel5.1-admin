@@ -1,0 +1,42 @@
+# 存放 composer 下载的 PHP package，包含了 laravel 的源码
+/vendor
+
+# 存放 npm 下载的 Node.js package
+/node_modules
+
+# Homestead vm 信息
+Homestead.yaml
+Homestead.json
+
+# Laravel 环境配置文件
+.env
+.env.php
+.env.*.php
+
+# Laravel 的一些临时／日志文件
+public/storage
+storage/*.key
+!storage/framework/cache/.gitkeep
+storage/framework/cache/*
+!storage/framework/sessions/.gitkeep
+storage/framework/sessions/*
+!storage/framework/views/.gitkeep
+storage/framework/views/*
+storage/logs
+
+# Mac OS
+#.DS_Store
+#*/.DS_Store
+
+# VIM 副本
+*~
+
+# 上传目录
+!public/uploads/avatar/default.jpg
+!public/uploads/avatar/default-l.jpg
+!public/uploads/avatar/default-m.jpg
+!public/uploads/avatar/default-s.jpg
+public/uploads/avatar/*
+
+!public/uploads/img/avatar-bg.png
+public/uploads/img/*

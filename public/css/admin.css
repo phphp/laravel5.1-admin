@@ -1,0 +1,310 @@
+body {
+	font-family: 'arial', 'sans-serif', 'Hiragino Sans GB W3', '微软雅黑';
+}
+
+
+/* admin/signin */
+.signin_body {
+	background-color: #333;
+}
+.signin_form_container {
+	max-width: 600px;
+	margin: 100px auto 0;
+	padding: 20px;
+	color: #FFF;
+}
+.signin_form {
+}
+#inputCaptcha {
+	width: calc(100% - 130px);
+	float: left;
+	border-radius: 4px 0 0 4px;
+}
+#inputCaptchaImg {
+	float: right;
+	border-radius: 0 4px 4px 0;
+}
+
+.my_nav {
+	border-radius: 0;
+}
+
+
+#sortable tr {
+	cursor: move;
+}
+
+
+/* text color */
+.text-color-default { color: #fff }
+.text-color-primary { color: #428bca }
+.text-color-success { color: #5cb85c }
+.text-color-info { color: #5bc0de }
+.text-color-warning { color: #f0ad4e }
+.text-color-danger { color: #d9534f }
+
+
+
+/** 面包屑导航（箭头） **/
+.btn-breadcrumb .btn:not(:last-child):after {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 10px solid white;
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+	left: 100%;
+	z-index: 3;
+}
+.btn-breadcrumb .btn:not(:last-child):before {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 10px solid rgb(173, 173, 173);
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+	margin-left: 1px;
+	left: 100%;
+	z-index: 3;
+}
+
+/** The Spacing **/
+.btn-breadcrumb .btn {
+	padding:6px 12px 6px 24px;
+}
+.btn-breadcrumb .btn:first-child {
+	padding:6px 6px 6px 10px;
+}
+.btn-breadcrumb .btn:last-child {
+	padding:6px 18px 6px 24px;
+}
+
+/** Default button **/
+.btn-breadcrumb .btn.btn-default:not(:last-child):after {
+	border-left: 10px solid #fff;
+}
+.btn-breadcrumb .btn.btn-default:not(:last-child):before {
+	border-left: 10px solid #ccc;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+	border-left: 10px solid #ebebeb;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+	border-left: 10px solid #adadad;
+}
+
+/** Primary button **/
+.btn-breadcrumb .btn.btn-primary:not(:last-child):after {
+	border-left: 10px solid #428bca;
+}
+.btn-breadcrumb .btn.btn-primary:not(:last-child):before {
+	border-left: 10px solid #357ebd;
+}
+.btn-breadcrumb .btn.btn-primary:hover:not(:last-child):after {
+	border-left: 10px solid #3276b1;
+}
+.btn-breadcrumb .btn.btn-primary:hover:not(:last-child):before {
+	border-left: 10px solid #285e8e;
+}
+
+/** Success button **/
+.btn-breadcrumb .btn.btn-success:not(:last-child):after {
+	border-left: 10px solid #5cb85c;
+}
+.btn-breadcrumb .btn.btn-success:not(:last-child):before {
+	border-left: 10px solid #4cae4c;
+}
+.btn-breadcrumb .btn.btn-success:hover:not(:last-child):after {
+	border-left: 10px solid #47a447;
+}
+.btn-breadcrumb .btn.btn-success:hover:not(:last-child):before {
+	border-left: 10px solid #398439;
+}
+
+/** Danger button **/
+.btn-breadcrumb .btn.btn-danger:not(:last-child):after {
+	border-left: 10px solid #d9534f;
+}
+.btn-breadcrumb .btn.btn-danger:not(:last-child):before {
+	border-left: 10px solid #d43f3a;
+}
+.btn-breadcrumb .btn.btn-danger:hover:not(:last-child):after {
+	border-left: 10px solid #d2322d;
+}
+.btn-breadcrumb .btn.btn-danger:hover:not(:last-child):before {
+	border-left: 10px solid #ac2925;
+}
+
+/** Warning button **/
+.btn-breadcrumb .btn.btn-warning:not(:last-child):after {
+	border-left: 10px solid #f0ad4e;
+}
+.btn-breadcrumb .btn.btn-warning:not(:last-child):before {
+	border-left: 10px solid #eea236;
+}
+.btn-breadcrumb .btn.btn-warning:hover:not(:last-child):after {
+	border-left: 10px solid #ed9c28;
+}
+.btn-breadcrumb .btn.btn-warning:hover:not(:last-child):before {
+	border-left: 10px solid #d58512;
+}
+
+/** Info button **/
+.btn-breadcrumb .btn.btn-info:not(:last-child):after {
+	border-left: 10px solid #5bc0de;
+}
+.btn-breadcrumb .btn.btn-info:not(:last-child):before {
+	border-left: 10px solid #46b8da;
+}
+.btn-breadcrumb .btn.btn-info:hover:not(:last-child):after {
+	border-left: 10px solid #39b3d7;
+}
+.btn-breadcrumb .btn.btn-info:hover:not(:last-child):before {
+	border-left: 10px solid #269abc;
+}
+
+
+/* rewrite bootstrap pull-left */
+.pull-left {
+	margin-right: 6px;
+}
+
+
+/* 隐藏 checkbox/radio 默认样式 */
+.muti-tags input[type=checkbox]{
+	visibility:hidden;
+}
+.muti-tags input[type=radio]{
+	visibility:hidden;
+}
+/* 新样式 */
+.muti-tags .checkbox label {
+	background-color: #FFF;
+	color: #333;
+	border: 1px solid #AAA;
+	border-radius: 4px;
+	padding: 1px 3px;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	-moz-user-select: none; /* 禁止双击选中 */
+}
+/* 选中样式 */
+.muti-tags input[type=radio]:checked,
+.muti-tags input[type=checkbox]:checked +label {
+	background-color: #337ab7;
+	border: 1px solid #337ab7;
+	color: #FFF;
+}
+
+
+/* 头像预览 */
+.preview-container {
+	position: relative;
+	background-color: #EFEFEF;
+	border: 1px dashed #AAA;
+	border-radius: 3px;
+	width: 260px;
+	height: 140px;
+	margin-top: 20px;
+}
+.preview-container img {
+	position: absolute;
+}
+/* 头像 */
+.nav .avatar-small {
+	margin: 5px 5px 0 15px;
+	width: 40px;
+	border-radius: 100px;
+	box-shadow: 0 0 5px #FFF;
+}
+#rgbaster-container {
+	max-width: 400px;
+	padding: 70px 0 20px;
+	text-align: center;
+	background-image: url('/uploads/img/avatar-bg.png');
+	border-radius: 6px;
+	border: 1px solid #EFEFEF;
+	margin-bottom: 10px;
+	background-position: center top;
+}
+#rgbaster {
+	border: 3px solid #FFF;
+	border-radius: 100px;
+	box-shadow: 0 0 3px #666;
+}
+
+
+/* 提示 */
+.tip-container {
+	position: fixed;
+	z-index: 100;
+	top: 150px;
+	right: 0px;
+	width: 30px;
+	height: 50px;
+	padding-left: 7px;
+	padding-top: 15px;
+	background-color: #EFEFEF;
+	border-radius: 10px 0 0 10px;
+	border: 1px solid #DDD;
+	border-right: none;
+}
+.tips {
+	display: none;
+	max-width: 280px;
+}
+.tips dd {
+	margin-top: 10px;
+}
+.tip-container:hover .tips {
+	display: block;
+}
+.tip-container:hover {
+	width: auto;
+	height: auto;
+}
+
+
+.today .info-header {
+	background-color: #F9F9F9;
+	border: 1px solid #E0E1E1;
+	padding: 1px 15px;
+}
+.today .info-header h5 {
+	color: #6F7376;
+}
+.today .info-header b {
+	color: #0099CC;
+	font-size: 43px;
+	padding-left: 13px;
+	padding-right: 13px;
+	font-weight: 500;
+}
+.today .info-body {
+	min-height: 200px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
