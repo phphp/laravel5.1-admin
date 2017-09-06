@@ -16,12 +16,12 @@ Homestead.json
 # Laravel 的一些临时／日志文件
 public/storage
 storage/*.key
-!storage/framework/cache/.gitkeep
 storage/framework/cache/*
-!storage/framework/sessions/.gitkeep
+!storage/framework/cache/.gitkeep
 storage/framework/sessions/*
-!storage/framework/views/.gitkeep
+!storage/framework/sessions/.gitkeep
 storage/framework/views/*
+!storage/framework/views/.gitkeep
 storage/logs
 
 # Mac OS
@@ -32,11 +32,11 @@ storage/logs
 *~
 
 # 上传目录
+public/uploads/avatar/*
 !public/uploads/avatar/default.jpg
 !public/uploads/avatar/default-l.jpg
 !public/uploads/avatar/default-m.jpg
 !public/uploads/avatar/default-s.jpg
-public/uploads/avatar/*
 
-!public/uploads/img/avatar-bg.png
 public/uploads/img/*
+!public/uploads/img/avatar-bg.png
