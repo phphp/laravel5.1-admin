@@ -2,7 +2,7 @@
 
 return [
     // 后台名称
-    'brand' => '控制台1',
+    'brand' => '控制台',
 
     // 用户列表分页尺寸
     'user_page_size' => 20,

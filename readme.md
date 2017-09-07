@@ -1,27 +1,46 @@
-## Laravel PHP Framework
+# laravel5.1-admin
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+![](docs/screenshot.png)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## 安装
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+### 克隆
 
-## Official Documentation
+`git clone https://github.com/phphp/laravel5.1-admin.git`
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+### 配置
 
-## Contributing
+1. 安装组件：`composer install`
+* 复制 .env 文件：`cp .env.example .env`
+* 生成 APP_KEY：`php artisan key:generate`
+* 配置 .env 文件中的数据库（用到邮件和 github OAuth 功能则需要填写相应的项目）
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
 
-## Security Vulnerabilities
+### 迁移和填充数据库
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+1. `php artisan migrate`
+* `php artisan db:seed`
 
-### License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+## 权限
+
+* `public/uploads`
+* `storage`
+* `bootstrap/cache`
+
+以上这些目录包括其子目录都需要有写权限。
+
+`config` 目录其下文件可在后台修改，但默认文件没有写权限，需要手动修改权限。
+
+`public` 目录默认没有写权限，其子目录 uploads 有。
+
+## 登录
+
+登录地址：/admin/login。
+
+默认账户密码为：admin secret。
+
+## 相关文档
+
+1. [上传文件](docs/上传文件.md)
+* [使用社会化登录](docs/使用社会化登录.md)
